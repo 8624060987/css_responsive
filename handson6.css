@@ -1,0 +1,198 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    /* display:flex; */
+    background-image: url("./shara\ desert.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display:flex;
+    justify-content: space-around;
+    /* gap:30px; */
+    color:white;
+    padding: 15px;
+
+    
+}
+
+.navbar{
+    display:flex;
+    /* gap: 50px;
+    justify-content: space-around;
+    padding: 15px; */
+    
+}
+ul li{
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0px 20px;
+    
+    display:inline-block;
+    padding: 0px 10px;
+   
+}
+.grid{
+    display:grid;
+    grid-template-columns: 500px 500px;
+    height:600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 40px 20px;
+    width: 80%;
+    /* justify-content: center; */
+
+       
+}
+.container2{
+    display: flex;
+    justify-content: space-around; 
+    
+    left: 200px;
+    right: 200px;
+    /* margin:auto; */
+}
+.sahara{
+
+    justify-content: center;
+   
+    max-width:50%;
+    color: white;
+    font-weight: bolder;
+    display:block;
+     left:200px;
+     padding: 50px; 
+     text-align: center;
+}
+.font{
+    /* padding-top: 80px; */
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    /* text-align: center; */
+}
+.box1{
+    background-image: url("pic-1.png");
+}
+.box2{
+    background-image: url("pic-2.png");
+}
+.box3{
+    background-image: url("pic-3.png");
+}
+.box4{
+    background-image: url("pic-4.png");  
+}
+
+.ui{
+    padding: 15px;
+    color: white;
+    border-radius: 20px;
+    background-size: cover; 
+}
+.ui:hover{
+    transform:translatey(-15px); 
+}
+.EXPLORE{
+    width: 250px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+ 
+
+
+
+/* responsive 280 to 500 */
+@media screen and (min-width:280px) and (max-width:500px)
+{   
+   
+    .container{
+    display:flex;
+    /* justify-content: space-between; */
+    padding: 20px;
+    }
+
+    .navbar{
+        display: flex;
+        /* flex-direction:column; */
+    }
+    .container2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .grid{
+        grid-template-columns:auto;
+        /* height:600px; */
+        overflow-x: hidden;
+    }  
+    ul li{
+        flex-direction: column;
+        font-size: 15px;
+    } 
+   
+    .sahara{
+         text-align: center;
+         left: 5%;
+        padding: 0px; 
+    }     
+    .font{
+        text-align: center;
+        font-size: 50px;
+    }
+    .ui{
+        height: 300px;
+        background-size: cover;
+    } 
+} 
+/* responsive 500 to 900 */
+@media screen and (min-width:500px) and (max-width:900px)
+    {
+        body{
+   
+          background-repeat: repeat;
+        }
+        .grid{
+            grid-template-columns: 80%;
+            justify-content: center;
+            gap: 20px;
+        }
+        .container2{
+        display:block;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .ui{
+        font-size: 30px;
+        width: 110%;
+        height: 200px;
+        background-size: cover;
+    } 
+    .sahara{
+        /* text-align:left; */
+        align-items:flex-start;
+        left: 5%;
+        padding: 0px; 
+    } 
+    .explore{
+       justify-content: flex-start;
+       margin: 10px;
+       gap: 20px;
+       font-size: 30px;
+    }    
+    .font{
+        text-align: center;
+        font-size: 70px;
+    }
+    p{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    }
