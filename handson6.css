@@ -44,9 +44,7 @@ ul li{
     background-repeat: no-repeat;
     gap: 40px 20px;
     width: 80%;
-    /* justify-content: center; */
-
-       
+    /* justify-content: center; */       
 }
 .container2{
     display: flex;
@@ -66,7 +64,7 @@ ul li{
     display:block;
      left:200px;
      padding: 50px; 
-     text-align: left
+     text-align: left;
 }
 .font{
     /* padding-top: 80px; */
